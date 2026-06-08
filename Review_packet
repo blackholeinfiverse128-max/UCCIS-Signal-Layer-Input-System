@@ -1,0 +1,87 @@
+
+
+## 1. ENTRY POINT
+
+app.py
+
+---
+
+## 2. CORE EXECUTION FLOW
+
+CSV Dataset
+↓
+Parser
+↓
+Signal Generator
+↓
+Structured Signal
+↓
+API Response
+
+---
+
+## 3. LIVE FLOW
+
+Traffic CSV dataset is read using pandas.
+
+Each row is converted into a structured signal containing:
+
+* trace_id
+* zone_id
+* domain
+* timestamp
+* metrics
+
+Signals are stored in memory and returned through FastAPI endpoints.
+
+---
+
+## 4. REAL JSON SIGNAL
+
+```json
+{
+  "trace_id": "TRACE_ab12cd34",
+  "zone_id": "zone_1",
+  "domain": "traffic",
+  "timestamp": "2026-01-01",
+  "metrics": {
+    "traffic_density": 60,
+    "violations": 3
+  }
+}
+```
+
+---
+
+## 5. WHAT WAS BUILT
+
+* FastAPI Signal Layer Backend
+* Strict Signal Schema
+* Deterministic Trace ID Generator
+* CSV Based Real/Semi-real Data Ingestion
+* Multi-Zone Signal Generation
+* Multi-Domain Support
+* API Layer
+* Failure Handling
+* Console Logging
+
+---
+
+## 6. FAILURE CASES
+
+Handled cases:
+
+* Invalid Zone ID
+* Missing Dataset
+* Corrupted CSV Data
+
+Error Format:
+
+```json
+{
+  "error": "INVALID_INPUT",
+  "trace_id": "TRACE_xxxx"
+}
+```
+
+---
