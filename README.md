@@ -139,12 +139,13 @@ Console logs include:
 
 <img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/d5063dac-d051-4512-aa99-d26518f97272" />
 
-
+---
 2. /signal?zone_id=zone_1
 
 <img width="1914" height="1000" alt="image" src="https://github.com/user-attachments/assets/6ef85530-6d60-4450-a00f-5fd038f55d93" />
 
-4. /signals
+---
+3. /signals
 
 <img width="1918" height="991" alt="image" src="https://github.com/user-attachments/assets/a0f11562-2997-457d-b42f-fde3c95bc1bb" />
 
