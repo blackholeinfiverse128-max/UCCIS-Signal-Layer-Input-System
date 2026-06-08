@@ -132,3 +132,9 @@ Console logs include:
 * signal generation
 * trace_id
 * payload details
+
+## Screenshots
+
+1. FastAPI Server Running
+
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/d5063dac-d051-4512-aa99-d26518f97272" />
